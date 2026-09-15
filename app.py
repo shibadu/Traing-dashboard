@@ -54,6 +54,10 @@ st.markdown(
       .block-container {padding-top: 2.2rem; max-width: 1400px;}
       [data-testid="stMetricValue"] {font-size: 1.9rem;}
       h1 {letter-spacing: -0.02em;}
+      /* Hide Streamlit Community Cloud's hosted-app toolbar (Share, star, edit, GitHub, menu) */
+      [data-testid="stToolbar"] {visibility: hidden; height: 0; position: fixed;}
+      [data-testid="stDecoration"] {visibility: hidden; height: 0;}
+      #MainMenu {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True,
