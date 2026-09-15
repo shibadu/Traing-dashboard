@@ -58,6 +58,11 @@ st.markdown(
       [data-testid="stToolbar"] {visibility: hidden; height: 0; position: fixed;}
       [data-testid="stDecoration"] {visibility: hidden; height: 0;}
       #MainMenu {visibility: hidden;}
+      /* Hide the default footer and the floating "Hosted with Streamlit" badge */
+      footer {visibility: hidden; height: 0;}
+      [data-testid="stBottomBlockContainer"] {visibility: hidden; height: 0;}
+      a[href*="streamlit.io"], a[href*="github.com/streamlit"] {display: none !important;}
+      .viewerBadge_container__1QSob, .viewerBadge_link__1S137 {display: none !important;}
     </style>
     """,
     unsafe_allow_html=True,
